@@ -1,0 +1,94 @@
+:root{
+    --color-white: #ffffff;
+    --color-blue: #0000FF;
+    --color-black: #202020;
+    --color-glass: rgba(255, 255, 255, 0.05);
+    --color-shadow:0 0 25px rgba(0, 0, 0, 0.5);
+    --color-red: #FF0000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--color-white);
+}
+body{
+    background: url(image-cache.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 4em;
+}
+.heading h1{
+    text-shadow: var(--color-shadow);
+    font-size: 6.2em;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+    margin-left: 4%;
+}
+.heading h3{
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    display: inline-block;
+}
+.Countdown{
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.kotak{
+    width: 28vw;
+    height: 29vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+span.angka{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    border-radius: 0.1em;
+}
+span.angka::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+}
+span.teks{
+    font-size: 2em;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: block;
+    position: relative;
+    text-align: center;
+    bottom: 2px;
+    padding: 0.3em;
+    font-weight: 600;
+    border-radius: 0.3em;
+    box-shadow: var(--color-shadow);
+}
